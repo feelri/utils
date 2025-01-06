@@ -19,7 +19,8 @@
     "require": {
         "php": ">=8.1",
         "illuminate/collections": "*",
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "vlucas/phpdotenv": "*"
     },
     "autoload": {
         "psr-4": {

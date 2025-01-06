@@ -60,15 +60,13 @@ trait CollectTrait
     public static function maps(bool $isKeySnake = true, string $nameLabel = 'name', string $valueLabel = 'value'): array
     {
         $cases = self::collect();
-        $keys = $cases->pluck($cases, $nameLabel)->toArray();
-        $values = $cases->pluck($cases, $valueLabel)->toArray();
-
+        $keys = $cases->pluck($nameLabel)->toArray();
+        $values = $cases->pluck($valueLabel)->toArray();
         if ($isKeySnake) {
             foreach ($keys as &$key) {
                 $key =  Str::snake($key);
             }
         }
-
         return array_combine($keys, $values);
     }
 
