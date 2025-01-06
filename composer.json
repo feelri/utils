@@ -1,0 +1,39 @@
+{
+    "name": "feelri/utils",
+    "description": "The utils package for feelri.",
+    "keywords": [
+        "feelri",
+        "utils",
+        "array",
+        "string",
+        "enum",
+        "collection"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "feelyoung",
+            "email": "knowthat@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/collections": "*",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Feelri\\Utils\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Feelri\\Utils\\Provider"
+            ]
+        }
+    }
+}
